@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .registration-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    .registration-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .registration-box input[type="text"],
+    .registration-box input[type="email"],
+    .registration-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .registration-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .registration-box input[type="submit"]:hover {
+      background: #0056b3;
+    }
+
+    .registration-box p {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .registration-box p a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .registration-box p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="registration-box">
+    <h2>Register</h2>
+    <form action="/submit" method="post">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <input type="submit" value="Sign Up">
+    </form>
+    <p>Already have an account? <a href="#">Login</a></p>
+  </div>
+
+</body>
+</html>
